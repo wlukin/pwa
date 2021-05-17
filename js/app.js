@@ -4,11 +4,6 @@ const coffees = [
     { name: "Voluptatem", image: "images/coffee.jpg" },
     { name: "Explicabo", image: "images/coffee.jpg" },
     { name: "Rchitecto", image: "images/coffee.jpg" },
-    { name: " Beatae", image: "images/coffee.jpg" },
-    { name: " Vitae", image: "images/coffee.jpg" },
-    { name: "Inventore", image: "images/coffee.jpg" },
-    { name: "Veritatis", image: "images/coffee.jpg" },
-    { name: "Accusantium", image: "images/coffee.jpg" },
 ]
 
 const showCoffees = () => {
@@ -31,7 +26,7 @@ document.addEventListener("DOMContentLoaded", showCoffees)
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
         navigator.serviceWorker
-            .register("js/serviceWorker.js")
+            .register("/js/serviceWorker.js")
             .then(res => console.log("service worker registered"))
             .catch(err => console.log("service worker not registered", err))
     })
